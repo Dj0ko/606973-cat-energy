@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Родин](https://up.htmlacademy.ru/adaptive/15/user/606973).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Варганов](https://htmlacademy.ru/profile/scorn_da).
 
 ---
 
