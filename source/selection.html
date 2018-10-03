@@ -28,7 +28,87 @@
       </nav>
     </header>
 
-    <main class="container-form"></main>
+    <main class="container-selection">
+      <section class="selection">
+        <div class="selection_wrapper">
+          <h1 class="selection__title">Подбор программы</h1>
+          <p class="selection_text">Заполните анкету и мы подберем
+            программу питания для вашего кота
+          </p>
+          <form class="form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <label>
+                Имя:* <input type="text" name="first-name" value="Барсик" required>
+              </label>
+              <br>
+              <label>
+                Вес(кг):* <input type="number" name="weight" value="7" required>
+              </label>
+              <br>
+              <label>
+                Возраст(лет): <input type="number" name="first-name" value="7">
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="target" value="slim" checked>Похудение
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="target" value="pro">Набор массы
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="target" value="unknown">Не знаю (нужен ваш совет)
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Контактные данные (владельца кота)</legend>
+              <label>
+                E-mail:* <input type="email" name="mail" value="kuklachev@gmail.com" required>
+              </label>
+              <br>
+              <label>
+                Телефон:* <input type="tel" name="phone" value="8 (960) 900-60-90" required>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Комментарий</legend>
+              <textarea name="comment" rows="7" cols="33">Расскажите обо всех повадках кота</textarea>
+            </fieldset>
+
+            <fieldset>
+              <legend>Дополнительно</legend>
+              <ul class="form_list">
+                <li class="form_item">
+                  <label>
+                    <input type="checkbox" name="sugar-substitute"> Сахарозаменитель
+                  </label>
+                </li>
+                <li class="form_item">
+                  <label>
+                    <input type="checkbox" name="water"> Питьевая вода
+                  </label>
+                </li>
+                <li class="form_item">
+                  <label>
+                    <input type="checkbox" name="milk"> Молоко
+                  </label>
+                </li>
+                <li class="form_item">
+                  <label>
+                    <input type="checkbox" name="vitamins"> Витамины
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="form_button button" type="button">Отправить заявку</button>
+          </form>
+          <small class="form_text"><sup>*</sup> - Обязательные поля</small>
+        </div>
+      </section>
+    </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
