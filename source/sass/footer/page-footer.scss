@@ -1,0 +1,12 @@
+.page-footer__container {
+  @include container;
+  background-color: $gray;
+}
+
+.page-footer__logo-image {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin: 0 auto;
+  padding: 39px 0 31px;
+}

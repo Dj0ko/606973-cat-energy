@@ -1,0 +1,19 @@
+.third-title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $black;
+  &--first-height {
+    line-height: 16px;
+  }
+  &--second-height {
+    margin: 0 auto;
+    margin-bottom: 37px;
+    line-height: 37px;
+    text-align: center;
+  }
+  &--first-margin {
+    margin-bottom: 40px;
+  }
+}

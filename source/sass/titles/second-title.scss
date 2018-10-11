@@ -1,0 +1,11 @@
+.second-title {
+  margin: 0;
+  padding-top: 32px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $black;
+  &--third-height {
+    line-height: 60px;
+  }
+}

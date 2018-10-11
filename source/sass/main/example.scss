@@ -1,0 +1,48 @@
+.example__container {
+  @include container;
+  background-color: $gray;
+}
+
+.example__text {
+  width: 279px;
+  margin-top: 34px;
+  margin-bottom: 30px;
+  font-family: $arial;
+  font-size: 14px;
+}
+
+.example__cost {
+  display: block;
+  text-align: center;
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+}
+
+.example__content-wrapper {
+  text-align: center;
+  border: 1px solid #cdcdcd;
+}
+
+.example__value {
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.example__field {
+  margin-bottom: 26px;
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__list {
+  @include list;
+}
+
+.example__toggles {
+  padding-bottom: 39px;
+}

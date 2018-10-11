@@ -1,0 +1,18 @@
+.adress {
+  background-color: #ffffff;
+}
+
+.adress__text {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 20px;
+  &--oswald {
+    font-family: $oswald;
+    font-size: 16px;
+  }
+}
+
+.adress__map {
+  width: 320px;
+  height: 400px;
+}

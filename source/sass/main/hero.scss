@@ -1,0 +1,26 @@
+.hero {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: #65a93c;
+  background-position: center;
+}
+
+.hero__container {
+  @include container;
+}
+
+.hero__text {
+  margin-top: 20px;
+  margin-bottom: 29px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__image {
+  width: 280px;
+  height: 271px;
+}
+
