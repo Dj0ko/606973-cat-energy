@@ -1,0 +1,37 @@
+.extra-products__container {
+  @include container;
+}
+
+.extra-products__list {
+  @include list;
+  margin-top: 30px;
+}
+
+.extra-products__item {
+  padding: 14px 0 17px;
+  border-bottom: 1px solid #cdcdcd;
+  &--first-border {
+    border-top: 1px solid #ededed;
+  }
+}
+
+.extra-products__text {
+  font-family: $arial;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.extra-products__promo {
+  padding: 39px 0 35px;
+}
+
+.extra-products__image {
+  width: 280px;
+  height: 289px;
+}
+
+.extra-products__text {
+  font-family: $arial;
+  text-align: center;
+
+}

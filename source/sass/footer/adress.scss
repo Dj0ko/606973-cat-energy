@@ -1,5 +1,9 @@
-.adress {
+.adress__container {
+  @include container;
   background-color: #ffffff;
+  &--gray {
+    background-color: $gray;
+  }
 }
 
 .adress__text {
@@ -12,7 +16,3 @@
   }
 }
 
-.adress__map {
-  width: 320px;
-  height: 400px;
-}

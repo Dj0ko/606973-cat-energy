@@ -1,0 +1,36 @@
+.main-product__list {
+  @include list;
+}
+
+.main-product__item {
+  border-bottom: 1px solid #ededed;
+  &--first-border {
+    border-top: 1px solid #ededed;
+  }
+}
+
+.main-product__container {
+  @include container;
+  padding: 24px 0;
+}
+
+.main-product__image {
+  width: 140px;
+  height: 144px;
+}
+
+.main-product__text {
+  font-family: $arial;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.main-product__show {
+  display: block;
+  padding-top: 59px;
+  text-align: center;
+  color: $black;
+  font-weight: 400;
+}
+
