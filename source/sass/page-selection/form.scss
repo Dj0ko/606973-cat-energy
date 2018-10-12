@@ -1,0 +1,44 @@
+.form__row {
+  @include container;
+  &--full {
+    padding: 22px 20px;
+    margin-top: 9px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+.form__label {
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.form__input {
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  &--no-margin {
+    margin-bottom: 0;
+  }
+}
+
+.form__input--text {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+  padding: 15px 0 15px 16px;
+}
+
+.form__list {
+  @include list;
+}
+
+.form__required {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 35px;
+  font-style: $arial;
+  font-size: 14px;
+  line-height: 16px;
+  text-align:center;
+}
+

@@ -1,0 +1,19 @@
+.selection {
+  @include full-width;
+}
+
+.selection__container {
+  @include container;
+}
+
+.selection__text {
+  width: 230px;
+  margin: 0;
+  margin-bottom: 39px;
+  font-size: 14px;
+  color: $black;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+

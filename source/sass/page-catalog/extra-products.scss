@@ -1,3 +1,7 @@
+.extra-products {
+  @include full-width;
+}
+
 .extra-products__container {
   @include container;
 }
@@ -19,6 +23,7 @@
   font-family: $arial;
   font-size: 14px;
   line-height: 14px;
+  text-align: center;
 }
 
 .extra-products__promo {
@@ -30,8 +35,3 @@
   height: 289px;
 }
 
-.extra-products__text {
-  font-family: $arial;
-  text-align: center;
-
-}

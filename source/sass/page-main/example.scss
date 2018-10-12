@@ -1,6 +1,10 @@
+.example {
+  @include full-width;
+  background-color: $gray;
+}
+
 .example__container {
   @include container;
-  background-color: $gray;
 }
 
 .example__text {

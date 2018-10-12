@@ -1,3 +1,7 @@
+.categories {
+  @include full-width;
+}
+
 .categories__container {
   @include container;
 }

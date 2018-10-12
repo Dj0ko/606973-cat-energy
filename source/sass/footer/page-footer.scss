@@ -1,6 +1,13 @@
+.page-footer {
+  @include full-width;
+}
+
 .page-footer__container {
   @include container;
   background-color: $gray;
+  &--white {
+    background-color: #ffffff;
+  }
 }
 
 .page-footer__logo-image {

@@ -1,3 +1,7 @@
+.main-product {
+  @include full-width;
+}
+
 .main-product__list {
   @include list;
 }
@@ -11,7 +15,8 @@
 
 .main-product__container {
   @include container;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .main-product__image {

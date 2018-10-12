@@ -1,3 +1,7 @@
-.page-header__container {
-  @include container;
+.page-header {
+  @include full-width;
+}
+
+.page-header__logo {
+  padding: 0 20px;
 }
