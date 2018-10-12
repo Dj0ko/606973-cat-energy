@@ -6,18 +6,22 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+
   &--green {
     background-color: #68b738;
   }
+
   &--third-size {
     font-size: 14px;
     padding: 14px 0 11px;
   }
+
   &--gray {
     color: #444444;
     background-color: #f2f2f2;
     line-height: 20px;
   }
+
   &--no-border {
     margin-top: 34px;
     border: none;

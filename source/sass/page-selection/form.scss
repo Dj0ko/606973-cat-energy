@@ -1,5 +1,6 @@
 .form__row {
   @include container;
+
   &--full {
     padding: 22px 20px;
     margin-top: 9px;
@@ -16,6 +17,7 @@
 .form__input {
   margin-bottom: 14px;
   text-transform: uppercase;
+
   &--no-margin {
     margin-bottom: 0;
   }
@@ -39,5 +41,5 @@
   font-style: $arial;
   font-size: 14px;
   line-height: 16px;
-  text-align:center;
+  text-align: center;
 }
