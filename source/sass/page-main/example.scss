@@ -15,7 +15,7 @@
 
   &--block {
     display: block;
-    }
+  }
 
   &--text-center {
     text-align: center;
@@ -51,10 +51,6 @@
 
   &--first-lh {
     line-height: $first-lh;
-  }
-
-  &--oswald {
-    font-style: $oswald;
   }
 
   &--fifth-fs {
