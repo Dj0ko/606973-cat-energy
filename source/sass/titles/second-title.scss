@@ -1,0 +1,11 @@
+.second-title {
+  margin: 30px 0;
+  font-size: $fifth-fs;
+  line-height: $sixth-lh;
+  font-weight: 400;
+  color: $black;
+
+  &--eighth-lh {
+    line-height: $eighth-lh;
+  }
+}

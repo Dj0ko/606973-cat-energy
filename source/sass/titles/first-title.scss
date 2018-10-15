@@ -1,0 +1,30 @@
+.first-title {
+  width: 253px;
+  margin: 0 auto;
+  padding-top: 29px;
+  font-weight: 400;
+  font-size: $sixth-fs;
+  line-height: $seventh-lh;
+  text-align: center;
+  color: #ffffff;
+
+  &--width {
+    width: 280px;
+  }
+
+  &--margin-top {
+    margin-top: 32px;
+  }
+
+  &--margin-bottom {
+    margin-bottom: 35px;
+  }
+
+  &--black {
+    color: $black;
+  }
+
+  &--eighth-lh {
+    line-height: $eighth-lh;
+  }
+}

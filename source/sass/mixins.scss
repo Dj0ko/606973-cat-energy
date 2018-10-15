@@ -1,0 +1,15 @@
+@mixin full-width {
+  width: 320px;
+  margin: 0 auto;
+  border: 1px solid blueviolet;
+}
+
+@mixin container {
+  padding: 0 20px;
+}
+
+@mixin list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

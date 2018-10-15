@@ -1,0 +1,24 @@
+.third-title {
+  margin: 0;
+  font-size: $third-fs;
+  line-height: $fifth-lh;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $black;
+
+  &--third-lh {
+    line-height: $third-lh;
+  }
+
+  &--text-center {
+    text-align: center;
+  }
+
+  &--ninth-lh {
+    line-height: $ninth-lh;
+  }
+
+  &--width {
+    width: 75px;
+  }
+}

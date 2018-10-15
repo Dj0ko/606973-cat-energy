@@ -1,0 +1,26 @@
+.hero {
+  @include full-width;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto;
+}
+
+.hero__container {
+  @include container;
+}
+
+.hero__text {
+  margin-top: 20px;
+  margin-bottom: 29px;
+  font-size: $second-fs;
+  line-height: $second-lh;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__image {
+  width: 280px;
+  height: 271px;
+}

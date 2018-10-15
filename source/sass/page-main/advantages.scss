@@ -1,0 +1,23 @@
+.advantages {
+  @include full-width;
+}
+
+.advantages__container {
+  @include container;
+}
+
+.advantages__list {
+  @include list;
+  margin-top: 41px;
+  margin-bottom: 41px;
+}
+
+.advantages__item {
+  margin-top: 26px;
+}
+
+.advantages__text {
+  width: 200px;
+  font-family: $arial;
+  font-size: $second-fs;
+}

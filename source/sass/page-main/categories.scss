@@ -1,0 +1,40 @@
+.categories {
+  @include full-width;
+}
+
+.categories__container {
+  @include container;
+}
+
+.categories__list {
+  @include list;
+  margin-top: 22px;
+}
+
+.categories__item {
+  padding-top: 39px;
+  background-color: $gray;
+  text-align: left;
+
+  &--margin-top {
+    margin-top: 20px;
+  }
+}
+
+.categories__text {
+  width: 235px;
+  margin: 0 auto;
+  margin-top: 41px;
+  min-height: 109px;
+  font-family: $arial;
+  font-size: $second-fs;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.categories__link {
+  display: block;
+  padding-bottom: 22px;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+}
