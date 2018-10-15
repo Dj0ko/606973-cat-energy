@@ -1,10 +1,13 @@
 .adress__text {
   font-family: $arial;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: $second-fs;
+  line-height: $fifth-lh;
 
   &--oswald {
     font-family: $oswald;
-    font-size: 16px;
+  }
+
+  &--third-fs {
+    font-size: $third-fs;
   }
 }

@@ -16,7 +16,7 @@
   background-color: $gray;
   text-align: left;
 
-  &--pro {
+  &--margin-top {
     margin-top: 20px;
   }
 }
@@ -24,9 +24,10 @@
 .categories__text {
   width: 235px;
   margin: 0 auto;
+  margin-top: 41px;
   min-height: 109px;
   font-family: $arial;
-  font-size: 14px;
+  font-size: $second-fs;
   border-bottom: 1px solid #d9d9d9;
 }
 

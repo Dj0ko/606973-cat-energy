@@ -32,6 +32,7 @@
 
 .form__list {
   @include list;
+  margin-bottom: 34px;
 }
 
 .form__required {
@@ -39,7 +40,7 @@
   margin-top: 24px;
   margin-bottom: 35px;
   font-style: $arial;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: $second-fs;
+  line-height: $third-lh;
   text-align: center;
 }

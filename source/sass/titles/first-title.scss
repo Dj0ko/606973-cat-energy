@@ -3,17 +3,28 @@
   margin: 0 auto;
   padding-top: 29px;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: $sixth-fs;
+  line-height: $seventh-lh;
   text-align: center;
   color: #ffffff;
 
-  &--black {
+  &--width {
     width: 280px;
+  }
+
+  &--margin-top {
     margin-top: 32px;
+  }
+
+  &--margin-bottom {
     margin-bottom: 35px;
+  }
+
+  &--black {
     color: $black;
-    line-height: 60px;
-    text-align: left;
+  }
+
+  &--eighth-lh {
+    line-height: $eighth-lh;
   }
 }

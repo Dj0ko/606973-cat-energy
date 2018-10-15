@@ -9,15 +9,14 @@
 .main-product__item {
   border-bottom: 1px solid #ededed;
 
-  &--first-border {
+  &--border-top {
     border-top: 1px solid #ededed;
   }
 }
 
 .main-product__container {
   @include container;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 
 .main-product__image {
@@ -25,10 +24,14 @@
   height: 144px;
 }
 
+.main-product__content-wrapper {
+  margin-top: 18px;
+}
+
 .main-product__text {
   font-family: $arial;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: $first-fs;
+  line-height: $third-lh;
   text-align: center;
 }
 

@@ -11,19 +11,26 @@
     background-color: #68b738;
   }
 
-  &--padding-bottom {
+  &--second-fs {
     font-size: 14px;
+  }
+  &--padding-bottom {
     padding: 14px 0 11px;
   }
 
   &--gray {
     color: #444444;
+  }
+
+  &--background {
     background-color: #f2f2f2;
-    line-height: 20px;
+  }
+
+  &--fifth-lh {
+    line-height: $fifth-lh;
   }
 
   &--no-border {
-    margin-top: 34px;
     border: none;
   }
 }

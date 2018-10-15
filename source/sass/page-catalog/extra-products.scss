@@ -15,15 +15,15 @@
   padding: 14px 0 17px;
   border-bottom: 1px solid #cdcdcd;
 
-  &--first-border {
+  &--border-top {
     border-top: 1px solid #ededed;
   }
 }
 
 .extra-products__text {
   font-family: $arial;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: $second-fs;
+  line-height: $second-lh;
   text-align: center;
 }
 

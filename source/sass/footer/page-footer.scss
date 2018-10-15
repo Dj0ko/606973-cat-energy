@@ -6,8 +6,8 @@
   @include container;
   background-color: $gray;
 
-  &--white {
-    background-color: #ffffff;
+  &--background {
+    background-color: $white;
   }
 }
 
