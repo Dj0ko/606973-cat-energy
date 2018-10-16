@@ -13,14 +13,6 @@
   font-size: $second-fs;
   margin: 0;
 
-  &--block {
-    display: block;
-  }
-
-  &--text-center {
-    text-align: center;
-  }
-
   &--uppercase {
     text-transform: uppercase;
   }
@@ -62,8 +54,11 @@
   }
 }
 
-.example__content-wrapper {
+.example__row {
   text-align: center;
+}
+
+.example__content-wrapper {
   border: 1px solid #cdcdcd;
   margin-bottom: 25px;
   margin-top: 48px;
