@@ -22,3 +22,15 @@
     width: 75px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .third-title {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .third-title {
+    text-align: center;
+  }
+}

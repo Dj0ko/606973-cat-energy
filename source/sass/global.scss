@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
 
   font-family: $oswald;
@@ -25,4 +26,16 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1400px;
+  }
 }

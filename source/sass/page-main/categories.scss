@@ -12,7 +12,7 @@
 }
 
 .categories__item {
-  padding-top: 39px;
+  padding: 39px 20px 24px;
   background-color: $gray;
   text-align: left;
 
@@ -24,7 +24,7 @@
 .categories__text {
   width: 235px;
   margin: 0 auto;
-  margin-top: 41px;
+  margin-top: 39px;
   min-height: 109px;
   font-family: $arial;
   font-size: $second-fs;
@@ -33,8 +33,34 @@
 
 .categories__link {
   display: block;
-  padding-bottom: 22px;
-  margin-left: 20px;
   margin-top: 20px;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .categories__container {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .categories__text {
+    min-width: 560px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    margin: 0;
+  }
 }

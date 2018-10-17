@@ -1,0 +1,21 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 708px;
+    margin: 25px auto 0;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid red;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1220px;
+    margin-top: 54px;
+  }
+}

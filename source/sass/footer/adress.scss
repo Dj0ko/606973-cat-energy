@@ -11,3 +11,9 @@
     font-size: $third-fs;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .adress__text {
+    width: 150px;
+  }
+}

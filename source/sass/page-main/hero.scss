@@ -1,9 +1,9 @@
 .hero {
   @include full-width;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: auto;
+  background-image: url("../../img/index-can-mobile@1x.png"), url("../../img/index-background-mobile@1x.jpg");
+  background-size: auto, auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 170px, center top;
 }
 
 .hero__container {
@@ -12,7 +12,7 @@
 
 .hero__text {
   margin-top: 20px;
-  margin-bottom: 29px;
+  margin-bottom: 300px;
   font-size: $second-fs;
   line-height: $second-lh;
   text-align: center;
@@ -20,7 +20,32 @@
   color: #ffffff;
 }
 
-.hero__image {
-  width: 280px;
-  height: 271px;
+@media (min-width: $tablet-width) {
+  .hero {
+    min-height: 870px;
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center 220px;
+  }
+
+  .hero__container {
+    padding-left: 90px;
+  }
+
+  .hero__text {
+    color: $black;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    min-height: 583px;
+    background-image: url("../../img/index-can-desktop@1x.png"),  url("../../img/index-background-desktop@1x.jpg");
+    background-size: auto, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 50px, right -273px;
+  }
 }

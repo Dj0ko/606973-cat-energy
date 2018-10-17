@@ -1,12 +1,13 @@
 .page-footer {
   @include full-width;
+  background-color: $gray;
 }
 
 .page-footer__adress {
   @include container;
-  background-color: $gray;
+  display: flex;
 
-  &--background {
+  &--bg-white {
     background-color: $white;
   }
 }
@@ -22,4 +23,44 @@
   height: 24px;
   margin: 0 auto;
   padding: 39px 0 31px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__adress {
+    width: 708px;
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+
+  .page-footer__container {
+    width: 708px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__adress {
+    position: absolute;
+    width: 570px;
+    top: 52px;
+    left: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }

@@ -21,3 +21,26 @@
   font-family: $arial;
   font-size: $second-fs;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__container {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .advantages__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}

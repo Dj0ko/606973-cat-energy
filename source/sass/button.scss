@@ -7,7 +7,7 @@
   text-transform: uppercase;
   color: #ffffff;
 
-  &--green {
+  &--bg-green {
     background-color: #68b738;
   }
 
@@ -19,12 +19,12 @@
     padding: 14px 0 11px;
   }
 
-  &--gray {
+  &--darkgray {
     color: #444444;
   }
 
-  &--background {
-    background-color: #f2f2f2;
+  &--bg-gray {
+    background-color: $gray;
   }
 
   &--fifth-lh {

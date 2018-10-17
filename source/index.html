@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -12,7 +13,7 @@
   <header class="page-header">
     <nav class="main-nav">
       <a class="page-header__logo">
-        <img class="page-header__logo-image logo-image" src="img/logo-mobile.svg" width="192" height="67" alt="Логотип Cat-Energy">
+        <img class="page-header__logo-image logo-image" src="img/logo-mobile.svg" width="200" height="65" alt="Логотип Cat-Energy">
       </a>
       <button class="main-nav__toogle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
@@ -34,8 +35,7 @@
       <div class="hero__container">
         <h1 class="first-title">Функциональное питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Вид продукта">
-        <a class="button button--green button--second-fs button--padding-button" href="selection.html">Подобрать программу</a>
+        <a class="button button--bg-green button--second-fs button--padding-button" href="selection.html">Подобрать программу</a>
       </div>
     </article>
 
@@ -92,47 +92,52 @@
     </section>
 
     <section class="example">
-      <div class="example__container slider">
+      <div class="example__container">
         <h2 class="second-title second-title--third-lh">Живой пример</h2>
         <p class="example__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
           по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example__content-wrapper">
-          <p class="example__text example__text--oswald example__text--fifth-fs example__text--sixth-lh
-          example__text--black">5 кг</p>
-          <p class="example__text example__text--margin-top example__text--first-fs
-          example__text--first-lh">Снижение веса</p>
+        <div class="example__row">
+          <div class="example__content-wrapper">
+            <p class="example__text example__text--oswald example__text--fifth-fs example__text--sixth-lh
+            example__text--black">5 кг</p>
+            <p class="example__text example__text--margin-top example__text--first-fs
+            example__text--first-lh">Снижение веса</p>
+          </div>
+          <div class="example__content-wrapper">
+            <p class="example__text example__text--oswald example__text--fifth-fs example__text--sixth-lh
+            example__text--black">60 дней</p>
+            <p class="example__text example__text--margin-top example__text--first-fs
+            example__text--first-lh">Затрачено времени</p>
+          </div>
+          <b class="example__text example__text--uppercase
+          example__text--oswald example__text--normal example__text--fifth-lh example__text--black">
+          Затраты на питание: 15 000 руб.</b>
         </div>
-        <div class="example__content-wrapper">
-          <p class="example__text example__text--oswald example__text--fifth-fs example__text--sixth-lh
-          example__text--black">60 дней</p>
-          <p class="example__text example__text--margin-top example__text--first-fs
-          example__text--first-lh">Затрачено времени</p>
-        </div>
-        <b class="example__text example__text--block example__text--text-center example__text--uppercase
-        example__text--oswald example__text--normal example__text--fifth-lh example__text--black">
-        Затраты на питание: 15 000 руб.</b>
-        <ul class="example__list slider-list">
-          <li class="example__item example__item--before slider__item">
+        <ul class="example__list">
+          <li class="example__item example__item--before">
             <img class="example__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Перед применением продукта">
           </li>
-          <li class="example__item example__item--after slider__item">
+          <li class="example__item example__item--after example__item--no-display">
             <img class="example__image" src="img/after-mobile@1x.png" width="320" height="240" alt="После применения продукта">
           </li>
         </ul>
-        <p class="example__toggles slider__toggles">
-          <button class="slider__toggle" type="button">Было</button>
-          <input class="slider__range" type="range" min="1" max="2">
-          <button class="slider__toggle" type="button">Стало</button>
-        </p>
+        <div class="example__row">
+          <button class="button example__button">Было</button>
+          <input type="range" class="visually-hidden">
+          <div class="example__range-view">
+            <span class="visually-hidden">Слайдер было/стало</span>
+          </div>
+          <button class="button example__button">Стало</button>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__adress page-footer__adress--background adress">
+    <div class="page-footer__adress page-footer__adress--bg-white adress">
       <b class="adress__text adress__text--oswald adress__text--third-fs">Приглашаем к сотрудничеству дилеров!</b>
       <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
