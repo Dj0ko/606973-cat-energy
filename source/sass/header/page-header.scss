@@ -5,3 +5,9 @@
 .page-header__logo {
   padding: 0 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    padding: 0;
+  }
+}
