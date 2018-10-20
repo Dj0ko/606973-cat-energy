@@ -15,7 +15,7 @@
     font-size: 14px;
   }
 
-  &--padding-bottom {
+  &--padding-button {
     padding: 14px 0 11px;
   }
 
@@ -33,5 +33,18 @@
 
   &--no-border {
     border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+
+    &--width {
+      width: 245px;
+    }
+
+    &--padding-button {
+      padding: 17px 0 15px;
+    }
   }
 }
