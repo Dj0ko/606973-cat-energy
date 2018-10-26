@@ -1,20 +1,21 @@
-.page-footer {
-  @include full-width;
-  background-color: $gray;
+.page-footer__container {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .page-footer__adress {
-  @include container;
   display: flex;
-
-  &--bg-white {
-    background-color: $white;
-  }
+  margin-top: 31px;
+  margin-bottom: 26px;
+  justify-content: space-between;
 }
 
-.page-footer__container {
-  @include container;
-  background-color: $gray;
+.page-footer__wrapper {
+  background-color: #ffffff;
+
+  &--bg-gray {
+    background-color: $gray;
+  }
 }
 
 .page-footer__logo-image {
@@ -28,26 +29,32 @@
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__adress {
-    width: 708px;
-    padding: 0 30px;
-    justify-content: space-between;
+    margin-top: 69px;
+    margin-bottom: 64px;
   }
 
   .page-footer__container {
     width: 708px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+
+    &--flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer {
+  .page-footer__container {
     position: relative;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .page-footer__adress {
@@ -55,12 +62,7 @@
     width: 570px;
     top: 52px;
     left: 110px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer__container {
-    width: 1220px;
-    margin: 0 auto;
+    z-index: 1;
+    background-color: #ffffff;
   }
 }

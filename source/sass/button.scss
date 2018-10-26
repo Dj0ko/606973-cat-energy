@@ -1,6 +1,7 @@
 .button {
   display: inline-block;
-  width: 280px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 13px 0 12px;
   text-decoration: none;
   text-align: center;
@@ -15,7 +16,7 @@
     font-size: 14px;
   }
 
-  &--padding-button {
+  &--padding {
     padding: 14px 0 11px;
   }
 
@@ -34,17 +35,29 @@
   &--no-border {
     border: none;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .button {
-
+  @media (min-width: $tablet-width) {
     &--width {
-      width: 245px;
+      width: 36%;
     }
 
-    &--padding-button {
+    &--fouth-fs {
+      font-size: $fouth-fs;
+    }
+
+    &--fifth-lh {
+      line-height: $fifth-lh;
+    }
+
+    &--padding {
       padding: 17px 0 15px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--width {
+      width: 20%;
+    }
+  }
 }
+

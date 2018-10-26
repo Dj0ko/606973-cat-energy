@@ -1,66 +1,218 @@
-.categories {
-  @include full-width;
-}
-
 .categories__container {
-  @include container;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
+    width: 708px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
 }
 
 .categories__list {
   @include list;
-  margin-top: 22px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .categories__item {
-  padding: 39px 20px 24px;
+  position: relative;
+  padding: 39px 20px 0;
+  margin-bottom: 20px;
   background-color: $gray;
-  text-align: left;
 
-  &--margin-top {
-    margin-top: 20px;
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 33px;
+    left: 22px;
+
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50px;
+  }
+
+  &--slim::after {
+    content: "";
+
+    position: absolute;
+    top: 31px;
+    left: 31px;
+
+    width: 35px;
+    height: 49px;
+    background-image: url("../../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+  }
+
+  &--pro::after {
+    content: "";
+
+    position: absolute;
+    top: 45px;
+    left: 11px;
+
+    width: 67px;
+    height: 28px;
+
+
+    background-image: url("../../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
+    padding: 83px 56px 41px;
+    margin-bottom: 30px;
+
+    &::before {
+      top: 100px;
+      left: 450px;
+
+      width: 200px;
+      height: 200px;
+      border-radius: 200px;
+    }
+
+    &--slim::after {
+      top: 91px;
+      left: 483px;
+
+      width: 140px;
+      height: 194px;
+    }
+
+    &--pro::after {
+      top: 140px;
+      left: 421px;
+
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 81px 52px 42px;
+
+    &::before {
+      top: 57px;
+      left: 59px;
+
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+    }
+
+    &--slim::after {
+      top: 50px;
+      left: 75px;
+
+      width: 70px;
+      height: 97px;
+    }
+
+    &--pro::after {
+      top: 80px;
+      left: 37px;
+
+      width: 134px;
+      height: 56px;
+    }
   }
 }
 
 .categories__text {
-  width: 235px;
-  margin: 0 auto;
+  position: relative;
+  width: 207px;
   margin-top: 39px;
-  min-height: 109px;
+  margin-bottom: 26px;
   font-family: $arial;
   font-size: $second-fs;
-  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
+    width: 375px;
+    margin-top: 37px;
+    margin-bottom: 45px;
+
+    font-size: $third-fs;
+    line-height: $sixth-lh;
+
+    &--width {
+      width: 344px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 466px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: $third-fs;
+    line-height: $sixth-lh;
+  }
 }
 
 .categories__link {
   display: block;
-  margin-top: 20px;
+  padding: 21px 0;
   text-decoration: none;
+  text-transform: uppercase;
+  color: $black;
+  line-height: $third-lh;
+  border-top: 1px solid #d9d9d9;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
+    border: none;
+    font-size: $fouth-fs;
+    line-height: $fifth-lh;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    font-size: $fouth-fs;
+    line-height: $fifth-lh;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .categories__container {
-    width: 708px;
-    margin: 0 auto;
+.categories__link--arrow::after {
+  position: absolute;
+
+  content: "";
+  width: 24px;
+  height: 11px;
+
+  bottom: 25px;
+  left: 113px;
+
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: $tablet-width) and (max-width: 1399px) {
+    bottom: 66px;
+    left: 180px;
   }
 
-  .categories__text {
-    min-width: 560px;
-    margin: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .categories__container {
-    width: 1220px;
-    margin: 0 auto;
-  }
-
-  .categories__list {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .categories__item {
-    margin: 0;
+  @media (min-width: $desktop-width) {
+    bottom: 66px;
+    left: 170px;
   }
 }

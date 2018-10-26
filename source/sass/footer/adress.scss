@@ -1,7 +1,14 @@
 .adress__text {
+  width: 140px;
+  margin: 0;
   font-family: $arial;
   font-size: $second-fs;
   line-height: $fifth-lh;
+  font-weight: 400;
+
+  &--black {
+    color: $black;
+  }
 
   &--oswald {
     font-family: $oswald;
@@ -10,10 +17,25 @@
   &--third-fs {
     font-size: $third-fs;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .adress__text {
-    width: 150px;
+  @media (min-width: $tablet-width) {
+    width: 155px;
+    font-size: $third-fs;
+
+    &--text-right {
+      text-align: right;
+    }
+
+    &--fouth-fs {
+      font-size: $fouth-fs;
+    }
+
+    &--tenth-lh {
+      line-height: $tenth-lh;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 76px 54px;
   }
 }

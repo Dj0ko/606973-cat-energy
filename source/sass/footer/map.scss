@@ -1,3 +1,23 @@
+.map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 124px;
+    height: 106px;
+
+    top: 177px;
+    left: 128px;
+
+    background-image: url("../../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: 0 0;
+  }
+}
+
 .map__image {
   width: 320px;
   height: 400px;

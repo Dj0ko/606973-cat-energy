@@ -1,6 +1,5 @@
 .first-title {
-  width: 253px;
-  margin: 0 auto;
+  margin: 0;
   font-weight: 400;
   font-size: $sixth-fs;
   line-height: $seventh-lh;
@@ -30,9 +29,8 @@
 
 @media (min-width: $tablet-width) {
   .first-title {
-    width: 420px;
+    width: 430px;
     color: $black;
-    margin: 0;
     text-align: left;
     font-size: $seventh-fs;
     line-height: $eighth-lh;
