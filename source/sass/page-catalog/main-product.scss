@@ -1,3 +1,16 @@
+.main-product__container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .main-product__list {
   @include list;
 
@@ -5,6 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 170px;
   }
 }
 
@@ -17,18 +31,27 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    background-color: $gray;
+    width: 324px;
+    margin-bottom: 141px;
+
+  &--last-child {
+    padding-top: 250px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    text-align: center;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
 }
 
-.main-product__container {
+.main-product__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 280px;
-  margin: 0 auto;
   margin-bottom: 24px;
-  // background-color: $gray;
 
   &--center {
     justify-content: center;
@@ -39,13 +62,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    width: 250px;
     flex-direction: column;
+    margin: 0 auto;
     align-items: center;
+    margin-top: -50px;
+    margin-bottom: 40px;
+  }
 
-    &--margin-top {
-      margin-top: 218px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
 
@@ -56,6 +82,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 34px;
   }
 }
 
@@ -79,6 +106,12 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
 
@@ -103,6 +136,10 @@
     font-family: $oswald;
   }
 
+  &--fifth-lh {
+    line-height: $fifth-lh;
+  }
+
   &--plus {
     position: relative;
 
@@ -121,6 +158,18 @@
       background-image: url("../../img/icon-plus-mobile.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: $third-fs;
+
+    &--fouth-fs {
+      font-size: $fouth-fs;
+    }
+
+    &--width {
+      width: 166px;
     }
   }
 }

@@ -67,7 +67,9 @@
 
   @media (min-width: $desktop-width) {
     font-size: $fouth-fs;
-    color: rgba(255, 255, 255, 1);
+
+    &--white {
+      color: rgba(255, 255, 255, 1);
 
     &:hover {
       color: rgba(255, 255, 255, 0.6);
@@ -80,5 +82,7 @@
     &--active {
       border-bottom-color: $white;
     }
+    }
+
   }
 }

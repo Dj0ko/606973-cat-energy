@@ -4,7 +4,6 @@
 
 .extra-products__container {
   width: 280px;
-  margin-top: 31px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +11,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220;
+    width: 1220px;
+  }
+}
+
+.extra-products__wrapper {
+  margin-top: 31px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }
@@ -36,8 +43,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    // flex-direction: column;
-    // align-items: center;
+    align-items: center;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 27px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    padding: 15px 0 16px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -49,6 +65,13 @@
   @media (min-width: $tablet-width) {
     width: 224px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    margin: 0;
+    margin-right: 40px;
+    margin-left: auto;
+  }
 }
 
 .extra-products__text {
@@ -59,6 +82,14 @@
 
   &--margin-top {
     margin-top: -100px;
+  }
+
+  &--third-fs {
+    font-size: $third-fs;
+  }
+
+  &--fifth-lh {
+    line-height: $fifth-lh;
   }
 
   &--white {
@@ -82,13 +113,75 @@
       background-position: 0 0;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+
+    &--margin-left {
+      margin-left: 420px;
+    }
+
+    &--margin-top {
+      margin-top: -130px;
+    }
+
+    &--white {
+
+      &::before {
+        bottom: 0;
+        left: -300px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+
+    &--margin-left {
+      margin-left: 0;
+    }
+
+    &--margin-top {
+      margin-top: -100px;
+    }
+
+    &--white {
+
+      &::before {
+        bottom: 100px;
+        left: 50%;
+
+        transform: translateX(-50%);
+      }
+    }
+  }
 }
 
 .extra-products__promo {
-  padding: 39px 0 35px;
+  padding-top: 39px;
+  margin-bottom: 74px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-top: 30px;
+  }
 }
 
 .extra-products__image {
   width: 280px;
   height: 289px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+  }
 }

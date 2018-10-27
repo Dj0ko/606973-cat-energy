@@ -1,16 +1,16 @@
 .second-title {
   margin: 0;
-  font-size: $fifth-fs;
-  line-height: $sixth-lh;
+  font-size: $sixth-fs;
+  line-height: $eighth-lh;
   font-weight: 400;
   color: $black;
 
-  &--eighth-lh {
-    line-height: $eighth-lh;
+  &--fifth-fs {
+    font-size: $fifth-fs;
   }
 
-  &--sixth-fs {
-    font-size: $sixth-fs;
+  &--sixth-lh {
+    line-height: $sixth-lh;
   }
 
   &--green-line {
@@ -31,13 +31,39 @@
   }
 
   @media (min-width: $tablet-width) {
+    font-size: $seventh-fs;
 
-    &--eighth-lh {
-      line-height: $eighth-lh;
+    &--sixth-fs {
+      font-size: $sixth-fs;
     }
 
-    &--seventh-fs {
-      font-size: $seventh-fs;
+    &--seventh-lh {
+      line-height: $seventh-lh;
     }
-  }
+
+      &::after {
+
+        top: 13px;
+        right: -20px;
+
+        width: 328px;
+        height: 3px;
+
+        background-color: #68b738;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+
+        top: 15px;
+        left: -56px;
+
+        width: 30px;
+        height: 3px;
+
+        background-color: #68b738;
+      }
+    }
 }
+

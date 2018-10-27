@@ -5,9 +5,16 @@
 
 .page-footer__adress {
   display: flex;
-  margin-top: 31px;
-  margin-bottom: 26px;
+  padding: 31px 0 26px;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 69px 0 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 76px 54px;
+  }
 }
 
 .page-footer__wrapper {
@@ -15,6 +22,10 @@
 
   &--bg-gray {
     background-color: $gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 89px;
   }
 }
 
@@ -33,11 +44,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer__adress {
-    margin-top: 69px;
-    margin-bottom: 64px;
-  }
-
   .page-footer__container {
     width: 708px;
     margin: 0 auto;
