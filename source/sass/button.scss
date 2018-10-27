@@ -1,5 +1,6 @@
 .button {
   display: inline-block;
+  font-family: $oswald;
   width: 100%;
   box-sizing: border-box;
   padding: 13px 0 12px;
@@ -39,6 +40,10 @@
   @media (min-width: $tablet-width) {
     &--width {
       width: 36%;
+    }
+
+    &--third-width {
+      width: 45%;
     }
 
     &--fouth-fs {

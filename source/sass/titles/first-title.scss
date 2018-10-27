@@ -26,11 +26,23 @@
     line-height: $eighth-lh;
   }
 
+  &--text-left {
+    text-align: left;
+  }
+
+  &--padding-left {
+    padding-left: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 430px;
     color: $black;
     text-align: left;
     font-size: $seventh-fs;
     line-height: $eighth-lh;
+
+    &--padding-left {
+      padding-left: 30px;
+    }
   }
 }

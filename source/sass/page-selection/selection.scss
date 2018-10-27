@@ -1,9 +1,31 @@
-.selection {
-  @include full-width;
+.selection__form {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .selection__container {
-  @include container;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 635px;
+
+    &--border {
+      border: 1px solid #ededed;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+
+    &--width {
+      width: 570px;
+    }
+
+    &--flex {
+      display: flex;
+    }
+  }
 }
 
 .selection__text {

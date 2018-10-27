@@ -1,0 +1,19 @@
+.product-list {
+  width: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.product-list__item {
+  width: 50%;
+  margin: 0;
+
+  &--text-right {
+    text-align: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}

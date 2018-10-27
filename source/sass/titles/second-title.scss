@@ -13,6 +13,18 @@
     line-height: $sixth-lh;
   }
 
+  &--width {
+    width: 181px;
+  }
+
+  &--margin {
+    margin: 31px 0;
+  }
+
+  &--padding-left {
+    padding-left: 20px;
+  }
+
   &--green-line {
     position: relative;
 
@@ -41,11 +53,17 @@
       line-height: $seventh-lh;
     }
 
+    &--padding-left {
+      padding-left: 67px;
+    }
+
+    &--width {
+      width: 520px;
+    }
+
+    &--green-line {
+
       &::after {
-
-        top: 13px;
-        right: -20px;
-
         width: 328px;
         height: 3px;
 
@@ -65,5 +83,5 @@
         background-color: #68b738;
       }
     }
+  }
 }
-
