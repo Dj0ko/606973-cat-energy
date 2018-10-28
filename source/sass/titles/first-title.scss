@@ -35,18 +35,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 430px;
+    width: 432px;
     color: $black;
     text-align: left;
     font-size: $seventh-fs;
     line-height: $eighth-lh;
 
-    &--width {
-      width: 280px;
-    }
+    // &--second-width {
+    //   width:
+    // }
 
     &--margin-top {
-      margin-top: 71px;
+      margin-top: 52px;
     }
 
     &--padding-left {

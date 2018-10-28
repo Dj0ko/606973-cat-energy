@@ -1,5 +1,9 @@
 .selection {
   padding-top: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .selection__container {
@@ -39,6 +43,12 @@
   margin-bottom: 38px;
   font-size: $second-fs;
   color: $black;
-  text-align: left;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+    font-size: $fouth-fs;
+    line-height: $eleventh-lh;
+    margin-bottom: 55px;
+  }
 }
