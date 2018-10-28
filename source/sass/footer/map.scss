@@ -8,31 +8,37 @@
     width: 124px;
     height: 106px;
 
-    top: 177px;
-    left: 128px;
+    top: 139px;
+    left: 129px;
 
     background-image: url("../../img/map-pin.png");
     background-repeat: no-repeat;
     background-size: 50% 50%;
     background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      top: 170px;
+      left: 350px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 165px;
+      left: 960px;
+    }
   }
 }
 
 .map__image {
   width: 320px;
-  height: 400px;
-}
+  height: 364px;
 
 @media (min-width: $tablet-width) {
-  .map__image {
     width: 768px;
     height: 396px;
   }
-}
 
 @media (min-width: $desktop-width) {
-  .map__image {
-    width: 1400px;
+    width: 1440px;
     height: 399px;
   }
 }

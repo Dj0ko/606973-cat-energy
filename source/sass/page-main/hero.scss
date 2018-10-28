@@ -2,21 +2,21 @@
   background-image: url("../../img/index-can-mobile@1x.png"), url("../../img/index-background-mobile@1x.jpg");
   background-size: auto, auto;
   background-repeat: no-repeat, no-repeat;
-  background-position: center 170px, center top;
+  background-position: center 167px, center top;
 
   @media (min-width: $tablet-width) {
-    min-height: 870px;
+    min-height: 832px;
     background-image: url("../../img/index-can-tablet@1x.jpg");
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: center 220px;
+    background-position: center 253px;
 
     @media (min-width: $desktop-width) {
     min-height: 583px;
     background-image: url("../../img/index-can-desktop@1x.png"), url("../../img/index-background-desktop@1x.jpg");
     background-size: auto, auto;
     background-repeat: no-repeat, no-repeat;
-    background-position: 560px 149px, right top;
+    background-position: 490px 157px, center right;
     padding-top: 130px;
     margin-top: -132px;
     }
@@ -31,21 +31,22 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
-    padding-left: 90px;
-    padding-top: 63px;
+    padding-left: 88px;
+    padding-top: 53px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    padding-top: 114px;
+    padding-top: 107px;
     padding-left: 80px;
   }
 }
 
 .hero__text {
-  margin-top: 20px;
-  margin-bottom: 300px;
+  margin-top: 24px;
+  margin-bottom: 302px;
   font-size: $second-fs;
   line-height: $second-lh;
   text-align: center;
@@ -57,12 +58,12 @@
     font-size: $fouth-fs;
     line-height: $fifth-lh;
     text-align: left;
-    margin-top: 34px;
-    margin-bottom: 48px;
+    margin-top: 40px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 37px;
+    margin-top: 41px;
     margin-bottom: 52px;
   }
 }

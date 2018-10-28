@@ -5,15 +5,15 @@
 
 .page-footer__adress {
   display: flex;
-  padding: 31px 0 26px;
+  padding: 27px 0 26px;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 69px 0 64px;
+    padding: 65px 41px 36px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 76px 54px;
+    padding: 65px 88px 35px 76px;
   }
 }
 
@@ -25,7 +25,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 89px;
+    // margin-top: 89px;
   }
 }
 
@@ -34,7 +34,15 @@
   width: 128px;
   height: 24px;
   margin: 0 auto;
-  padding: 39px 0 31px;
+  padding: 35px 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 62px 0 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 59px 0 63px;
+  }
 }
 
 .page-footer__copyright {
@@ -66,8 +74,9 @@
   .page-footer__adress {
     position: absolute;
     width: 570px;
-    top: 52px;
-    left: 110px;
+    box-sizing: border-box;
+    top: 93px;
+    left: 0;
     z-index: 1;
     background-color: #ffffff;
   }

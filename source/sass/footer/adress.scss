@@ -18,6 +18,10 @@
     font-size: $third-fs;
   }
 
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
   @media (min-width: $tablet-width) {
     width: 155px;
     font-size: $third-fs;
@@ -33,5 +37,14 @@
     &--tenth-lh {
       line-height: $tenth-lh;
     }
+
+    span {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }

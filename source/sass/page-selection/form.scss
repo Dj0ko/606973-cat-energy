@@ -26,7 +26,7 @@
     }
 
     &--padding-left {
-      padding-left: 110px;
+      padding-left: 40px;
     }
 
     &--margin-right {
@@ -80,7 +80,7 @@
   }
 
   &--margin-bottom{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   &--margin-top{
@@ -95,14 +95,26 @@
 }
 
 .form__input {
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 14px;
   text-transform: uppercase;
-  padding: 15px 0 15px 16px;
+  padding: 12px 0 13px 11px;
 
   &--no-margin {
     margin-bottom: 0;
+  }
+
+  &--text {
+    margin-bottom: 14px;
+  }
+
+  &--padding-left {
+    padding-left: 16px;
   }
 
   &--radio + label::before {
@@ -185,15 +197,12 @@
   }
 }
 
-.form__input--text {
-  margin-bottom: 14px;
-}
-
 .form__list {
   @include list;
-  margin-bottom: 34px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -202,7 +211,7 @@
 
 .form__item {
   display: flex;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   padding-left: 45px;
 
   @media (min-width: $tablet-width) {
@@ -217,9 +226,9 @@
 
 .form__required {
   display: block;
-  margin-top: 24px;
-  margin-bottom: 35px;
-  font-style: $arial;
+  margin-top: 17px;
+  margin-bottom: 32px;
+  font-family: $arial;
   font-size: $second-fs;
   line-height: $third-lh;
   text-align: center;

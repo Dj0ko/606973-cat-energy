@@ -1,5 +1,13 @@
 .extra-products {
-  margin-top: 31px;
+  margin-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 76px;
+  }
 }
 
 .extra-products__container {
@@ -12,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-bottom: 85px;
   }
 }
 
@@ -27,11 +36,15 @@
 
 .extra-products__list {
   @include list;
-  margin-top: 30px;
+  margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 86px;
+  }
 }
 
 .extra-products__item {
-  padding: 14px 0 17px;
+  padding: 14px 0 18px;
   border-bottom: 1px solid #cdcdcd;
 
   &--border-top {
@@ -47,23 +60,25 @@
     border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
-    padding: 27px 35px;
+    padding: 15px 36px 28px;
   }
 
   @media (min-width: $desktop-width) {
     width: 895px;
-    padding: 15px 0 16px;
+    padding: 18px 0 16px;
     flex-wrap: nowrap;
   }
 }
 
 .extra-products__content-wrapper {
+  margin: 12px 0 16px;
   display: flex;
   width: 280px;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     width: 224px;
+    margin: 16px 0 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,7 +96,7 @@
   text-align: center;
 
   &--margin-top {
-    margin-top: -100px;
+    margin-top: -103px;
   }
 
   &--third-fs {
@@ -100,7 +115,7 @@
       position: absolute;
       content: "";
 
-      bottom: 100px;
+      bottom: 123px;
       left: 50%;
 
       transform: translateX(-50%);
@@ -128,8 +143,8 @@
     &--white {
 
       &::before {
-        bottom: 0;
-        left: -300px;
+        bottom: 7px;
+        left: -301px;
       }
     }
   }
@@ -142,13 +157,13 @@
     }
 
     &--margin-top {
-      margin-top: -100px;
+      margin-top: -103px;
     }
 
     &--white {
 
       &::before {
-        bottom: 100px;
+        bottom: 123px;
         left: 50%;
 
         transform: translateX(-50%);
@@ -159,15 +174,15 @@
 
 .extra-products__promo {
   padding-top: 39px;
-  margin-bottom: 74px;
+  margin-bottom: 76px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 150px;
+    margin-bottom: 144px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding-top: 30px;
+    padding-top: 58px;
   }
 }
 
@@ -178,6 +193,7 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     height: 200px;
+    margin-top: 30px;
   }
 
   @media (min-width: $desktop-width) {

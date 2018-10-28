@@ -11,7 +11,7 @@
   }
 
   &--padding-left {
-    padding-left: 72px;
+    padding-left: 71px;
   }
 
   &--ninth-lh {
@@ -38,11 +38,23 @@
     &--text-center {
       text-align: center;
     }
+
+    &--sixth-fs {
+      font-size: $sixth-fs;
+    }
+
+    &--margin-bottom {
+      margin-bottom: 17px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     &--padding-left {
-      padding-left: 222px;
+      padding-left: 162px;
+    }
+
+    &--margin-bottom {
+      margin-bottom: 2px;
     }
   }
 }

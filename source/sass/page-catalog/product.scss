@@ -2,10 +2,18 @@
   width: 140px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 18px;
+  margin-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: 17px;
+  }
 }
 
 .product-list__item {
+  font-size: $first-fs;
+  line-height: $third-lh;
+  font-family: $arial;
   width: 50%;
   margin: 0;
 
@@ -15,5 +23,8 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
+    font-size: $third-fs;
+    line-height: $third-lh;
+    padding: 9px 0 6px;
   }
 }

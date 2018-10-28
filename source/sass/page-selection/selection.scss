@@ -1,6 +1,5 @@
-.selection__form {
-  display: flex;
-  flex-wrap: wrap;
+.selection {
+  padding-top: 12px;
 }
 
 .selection__container {
@@ -28,10 +27,16 @@
   }
 }
 
+.selection__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .selection__text {
   width: 230px;
   margin: 0;
-  margin-bottom: 39px;
+  margin-top: 37px;
+  margin-bottom: 38px;
   font-size: $second-fs;
   color: $black;
   text-align: left;

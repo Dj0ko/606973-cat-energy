@@ -18,7 +18,8 @@
   }
 
   &--margin {
-    margin: 31px 0;
+    margin-top: 28px;
+    margin-bottom: 33px;
   }
 
   &--padding-left {
@@ -62,6 +63,7 @@
     }
 
     &--green-line {
+      padding-left: 38px;
 
       &::after {
         width: 328px;
@@ -84,4 +86,10 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--green-line {
+      padding-left: 0;
+  }
+}
 }

@@ -13,7 +13,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -31,6 +31,10 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+input.visually-hidden {
+  width: 1px;
 }
 
 @media (min-width: $tablet-width) {
